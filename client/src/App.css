@@ -1,0 +1,259 @@
+nav{
+  display:flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height:50px;
+}
+
+.maincontainer{
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.homeCards{
+  display: grid;
+  justify-items: center;
+  border: 1px solid black;
+  padding: 5px;
+  border-radius: 2px;
+}
+
+.homeCards img{
+  float: center;
+  width:  330px;
+  height: 220px;
+  object-fit: cover;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.homeContainer{
+  display: grid;
+  justify-content: center;
+  gap: 5px;
+  grid-template-columns: repeat(3,30%);
+}
+
+.productContainer{
+  display: grid;
+  justify-items: center;
+}
+
+.productContainer img{
+  float: center;
+  object-fit: cover;
+  width: 900px;
+  height: 500px;
+  border-radius: 2px;
+}
+
+.productContainer button{
+  width: 80px;
+  height: 33px;
+}
+
+.productContainer button:hover{
+ color: blue;
+}
+
+.cartContainer{
+  display: grid;
+  grid-template-columns: repeat(3,20%);
+  border: 1px solid black;
+  justify-content: center;
+  padding: 10px;
+  height: 380px;
+  overflow-y: scroll;
+  gap: 5px;
+}
+
+.cartItem{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  width: 200px;
+  height: 150px;
+  justify-content: center;
+  align-items: center;
+}
+
+.cartHandle div{
+  display: flex;
+  gap: 10px;
+}
+
+.cartHandle button{
+  width: 100px;
+  height: 50px;
+}
+
+.cartHandle button:hover{
+  color: blue;
+}
+
+.myordersContainer{
+  display: grid;
+  grid-template-columns: repeat(3,20%);
+  border: 1px solid black;
+  justify-content: center;
+  padding: 10px;
+  overflow-y: scroll;
+  gap: 5px;
+  height: 350px;
+}
+
+.orderReceipt{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  width: 200px;
+  height: 150px;
+  justify-content: center;
+  align-items: center;
+}
+
+.formbox{
+  display: grid;
+  height: 300px;
+  width: 300px;
+  border: 1px solid black;
+  justify-items: center;
+  align-content: center;
+  gap: 10px;
+}
+
+.formbox input{
+  width: 200px;
+  height: 30px;
+}
+
+.formbox button{
+  width: 100px;
+  height: 30px;
+}
+
+.maincontainer section{
+  display: grid;
+  justify-items: center;
+  /* height: 600px; */
+}
+
+.registerbox{
+  display: grid;
+  height: 400px;
+  width: 300px;
+  border: 1px solid black;
+  justify-items: center;
+  align-content: center;
+  gap: 10px;
+}
+
+.registerbox input{
+  width: 200px;
+  height: 30px;
+}
+
+.registerbox button{
+  width: 100px;
+  height: 30px;
+}
+
+@media (max-width: 1210px){
+  nav{
+    font-size: large;
+  }
+
+  .homeContainer{
+    grid-template-columns: repeat(1,100%);
+  }
+
+  .productContainer img{
+    float: center;
+    width:  375px;
+    height: 225px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+
+  .productContainer{
+    height: 793px;
+    overflow-y: scroll;
+  }
+
+  .cartContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 655px;
+  }
+
+  .cartItem{
+    width:350px ;
+    height: 180px;
+    font-size: x-large;
+  }
+
+  .cartHandle{
+    font-size: x-large;
+  }
+
+  .cartItem button{
+    width: 50px;
+    height: 40px;
+  }
+
+  .myordersContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 613px;
+  }
+
+  .orderReceipt{
+    width:340px ;
+    height: 160px;
+    font-size: large;
+  }
+
+  #userDetails{
+    font-size: large;
+  }
+
+  .maincontainer section{
+    font-size: large;
+  }
+
+  .formbox input{
+    width: 250px;
+    height: 40px;
+    font-size: large;
+  }
+  
+  .formbox button{
+    font-size: large;
+    height: 40px;
+  }
+
+  .registerbox{
+    height: 600px;
+  }
+
+  .registerbox input{
+    width: 250px;
+    height: 40px;
+    font-size: large;
+  }
+
+  .registerbox button{
+    font-size: large;
+    height: 40px;
+  }
+
+  .registerbox textarea{
+    font-size: large;
+  }
+
+
+}
